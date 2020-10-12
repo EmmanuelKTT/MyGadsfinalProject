@@ -8,4 +8,17 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <style name="displayx_dialog" parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:windowTitleStyle">@style/displayx_dialog_title</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="displayx_dialog_title" parent="android:Widget.TextView">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+
 </resources>
