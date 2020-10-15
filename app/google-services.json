@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "236568766068",
+    "firebase_url": "https://gadproject2020.firebaseio.com",
+    "project_id": "gadproject2020",
+    "storage_bucket": "gadproject2020.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236568766068:android:d1e09982cc076de9495321",
+        "android_client_info": {
+          "package_name": "com.kottland.mygadsfinalproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "236568766068-6qgqkvmc5766rnlvmpfbc2mvbju3idog.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOorT7bRUkIsceJrB4avthFNRlD_9OayY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "236568766068-6qgqkvmc5766rnlvmpfbc2mvbju3idog.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
