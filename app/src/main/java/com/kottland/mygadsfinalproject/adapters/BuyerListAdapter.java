@@ -51,7 +51,7 @@ public class BuyerListAdapter extends RecyclerView.Adapter<BuyerListAdapter.Recy
         history_items prodct = account_list.get(position);
         //  viewHolder.tvImge.setText();
         viewHolder.tvTitle.setText(prodct.getItemsName());
-        viewHolder.tvDesc.setText(prodct.getItemsCtd() + " "+"USD");
+        viewHolder.tvDesc.setText(prodct.getItemsPayType() + " "+"USD");
 
 
     }
@@ -81,23 +81,19 @@ public class BuyerListAdapter extends RecyclerView.Adapter<BuyerListAdapter.Recy
             itemView.findViewById(R.id.linerlayout_tv).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    listener.del(getAdapterPosition());
+
                 }
             });
         }
 
     }
 
-    public void removeItem(int position) {
-        account_list.remove(position);
-        notifyItemRemoved(position);
-        notifyItemRangeChanged(position,account_list.size());
-    }
 
     public interface AccountListener {
 
 
         void del(int position);
-        void retrieve(int position);
     }
 
     private  AccountListener listener;

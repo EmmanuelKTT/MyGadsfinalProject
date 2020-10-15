@@ -1,16 +1,9 @@
 package com.kottland.mygadsfinalproject.adapters;
 
-import android.app.Dialog;
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -21,20 +14,18 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.kottland.mygadsfinalproject.R;
 import com.kottland.mygadsfinalproject.model.product;
 
-import java.util.ArrayList;
 import java.util.List;
 
-import static android.content.Context.MODE_PRIVATE;
 
 
-public class MerchantProductAdapter extends RecyclerView.Adapter<MerchantProductAdapter.RecyclerViewHolder> {
+public class AllProductAdapter extends RecyclerView.Adapter<AllProductAdapter.RecyclerViewHolder> {
 
     private List<product> account_list;
     private Context context;
 
 
 
-    public MerchantProductAdapter(Context context, List<product> account_list ) {
+    public AllProductAdapter(Context context, List<product> account_list ) {
         this.context = context;
         this.account_list = account_list;
     }
@@ -47,7 +38,7 @@ public class MerchantProductAdapter extends RecyclerView.Adapter<MerchantProduct
     @Override
     public RecyclerViewHolder onCreateViewHolder(ViewGroup viewGroup, int position) {
         LayoutInflater inflater = LayoutInflater.from(viewGroup.getContext());
-        View itemView = inflater.inflate(R.layout.merchant_list_item, viewGroup, false);
+        View itemView = inflater.inflate(R.layout.allprd_list_item, viewGroup, false);
 
 
 
@@ -59,7 +50,7 @@ public class MerchantProductAdapter extends RecyclerView.Adapter<MerchantProduct
     public void onBindViewHolder(RecyclerViewHolder viewHolder, int position) {
 
         product prodct = account_list.get(position);
-      //  viewHolder.tvImge.setText();
+        //  viewHolder.tvImge.setText();
         viewHolder.tvTitle.setText(prodct.getProductName());
         viewHolder.tvDesc.setText(prodct.getProductAmount()+ " "+"USD");
 
@@ -71,7 +62,7 @@ public class MerchantProductAdapter extends RecyclerView.Adapter<MerchantProduct
 
 
         public ImageView tvImge;
-        public  TextView tvTitle;
+        public TextView tvTitle;
         public  TextView tvDesc;
         public LinearLayout tvParent;
 
@@ -111,9 +102,8 @@ public class MerchantProductAdapter extends RecyclerView.Adapter<MerchantProduct
 
     private  AccountListener listener;
 
-    public MerchantProductAdapter setListener(AccountListener listener) {
+    public AllProductAdapter setListener(AccountListener listener) {
         this.listener = listener;
         return this;
     }
 }
-

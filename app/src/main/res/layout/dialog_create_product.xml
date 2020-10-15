@@ -11,6 +11,13 @@
     android:background="@color/colorPrimary"
     >
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_close_24"
+        android:id="@+id/action_close"
+        android:layout_gravity="end|top"
+        android:padding="8dp" />
 
     <TextView
         android:id="@+id/txtheader"
@@ -23,6 +30,8 @@
         android:textColor="@color/white"
         android:layout_gravity="center_horizontal"
         android:textSize="18sp" />
+
+
 
     <View
         android:layout_width="match_parent"
@@ -38,23 +47,6 @@
 
 
 
-        <TextView
-            android:id="@+id/txttitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/colorPrimary"
-            android:layout_marginTop="10dp"
-            android:text=" This is a custom alert dialog"
-            android:textAlignment="center"
-            android:padding="16dp"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:textSize="16sp" >
-
-
-
-
-        </TextView>
 
         <EditText
             android:layout_width="match_parent"

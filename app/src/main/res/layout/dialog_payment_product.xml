@@ -55,9 +55,11 @@
         </TextView>
 
         <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinnerttype"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:entries="@array/pay_types"
+            android:background="@color/white"
             android:padding="8dp"
             android:spinnerMode="dropdown"
             android:layout_margin="16dp"
